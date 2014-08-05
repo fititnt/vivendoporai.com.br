@@ -1,5 +1,6 @@
 exclude: [nbproject]
+baseurl:
 permalink: /:title
-paginate: 1
+paginate: 10
 paginate_path: /page/:num
 name: Vivendoporai.com.br
