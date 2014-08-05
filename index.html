@@ -4,9 +4,11 @@ title: Início
 ---
 
 <!-- iterate through the posts on this page -->
+<!-- EOP: Enquanto não tiver dominio dedicado, alterar manualmente -->
 {% for page in paginator.posts %}
   <div class="post">
-    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+    <!--<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>-->
+    <h1><a href="http://fititnt.github.io/vivendoporai.com.br{{ page.url }}">{{ page.title }}</a></h1>
     <p class="meta">{{ page.date | date: "%B %e, %Y" }}</p>
       {{ page.content | postmorefilter: page.url, "Read the rest of this entry" }}
   </div>

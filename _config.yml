@@ -1,7 +1,9 @@
 exclude: [nbproject]
 baseurl: 
-#permalink: /:title
-permalink: vivendoporai.com.br/:title # POG!
+permalink: /:title
+#permalink: vivendoporai.com.br/:title # POG!
 paginate: 10
 paginate_path: /page/:num
 name: Vivendoporai.com.br
+#url: http://fititnt.github.io/vivendoporai.com.br/
+#url: localhost:4000
