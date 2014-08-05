@@ -1,9 +1,9 @@
 exclude: [nbproject, Gemfile, Gemfile.lock]
 baseurl: 
+relative_permalinks: false
 permalink: /:title
-#permalink: vivendoporai.com.br/:title # POG!
 paginate: 10
 paginate_path: /page/:num
 name: Vivendoporai.com.br
-#url: http://fititnt.github.io/vivendoporai.com.br/
-#url: localhost:4000
+#liveurl: http://localhost:4000
+liveurl: http://fititnt.github.io/vivendoporai.com.br

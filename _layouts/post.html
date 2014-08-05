@@ -1,5 +1,8 @@
+---
+layout: default
+---
 {% if page.tags.size > 0 %}
-    {% capture tags_content %}Posted with {% if page.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
+    {% capture tags_content %}Tags: {% if page.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
     {% for post_tag in page.tags %}
         {% for data_tag in site.data.tags %}
             {% if data_tag.slug == post_tag %}
@@ -14,37 +17,6 @@
 {% else %}
     {% assign tags_content = '' %}
 {% endif %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
-  </head>
+<p id="post-meta">{{ tags_content }}</p>
+{{ content }}
 
-  <body>
-    <div id="container">
-      <div class="inner">
-        <header>
-          <h1><img src="../images/site/vivendo-por-ai.png" alt="Marca do blog Vivendo por AI"></h1>
-          <h2 class="subtitulo">Arquitetura da informação, usabilidade, acessibilidade, UX e o dia-a-dia de quem vive isso :)</h2>
-        </header>
-        <hr>
-        <section id="main_content">
-        <p id="post-meta">{{ tags_content }}</p>
-          {{ content }}
-        </section>
-        <footer>
-          Por <a rel="author" href="https://plus.google.com/u/0/105760636241690392399/">Juliana Fernandes</a>. Copyright © 2013 <a href="http://www.vivendoporai.com.br/">Vivendo por AI | Arquitetura da informação, usabilidade, UX e o dia-a-dia de quem vive isso</a>.
-        </footer>
-      </div>
-    </div>
-  </body>
-</html>
