@@ -1,2 +1,5 @@
 exclude: [nbproject]
+permalink: /:title
+paginate: 1
+paginate_path: /page/:num
 name: Vivendoporai.com.br
