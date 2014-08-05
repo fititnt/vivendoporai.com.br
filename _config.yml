@@ -1,4 +1,4 @@
-exclude: [nbproject]
+exclude: [nbproject, Gemfile, Gemfile.lock]
 baseurl: 
 permalink: /:title
 #permalink: vivendoporai.com.br/:title # POG!
