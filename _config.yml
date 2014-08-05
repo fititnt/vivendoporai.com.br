@@ -1,6 +1,7 @@
 exclude: [nbproject]
-baseurl:
-permalink: /:title
+baseurl: 
+#permalink: /:title
+permalink: vivendoporai.com.br/:title # POG!
 paginate: 10
 paginate_path: /page/:num
 name: Vivendoporai.com.br

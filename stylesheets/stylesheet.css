@@ -85,7 +85,7 @@ header h2 {
 }
 
 #container {
-  background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
+  /*background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;*/
   min-height: 595px;
 }
 
@@ -369,3 +369,25 @@ footer a:hover {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {}
+
+
+/* exclusivo vivendoporai.com.br */
+body,#container {
+  font-family: Georgia, Palatino, 'Times New Roman';
+  background-color: #fff;
+  color: rgb(85, 85, 85);
+}
+p {
+  line-height: 1.8;
+  margin: 0 0 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Amaranth, sans-serif;
+  color: rgb(24, 24, 24);
+}
+.subtitulo {
+  font-family: Georgia, Palatino, 'Times New Roman';
+  color: rgb(85, 85, 85);
+  font-size: 18px;
+  font-style: italic;
+}
